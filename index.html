@@ -71,12 +71,6 @@ Math.clamp = function(number, min, max) {
     else return number;
 }
 
-Math.moveTowards = function(current, target, amount)
-{
-    if (current<target) return Math.min(current+amount, target);
-    else return Math.max(current-amount, target);
-}
-
 Math.moveTowards = function(current, target, amountUp, amountDown)
 {
     if (current<target) return Math.min(current+amountUp, target);
